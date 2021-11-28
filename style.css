@@ -1,0 +1,78 @@
+body{
+text-align: center;
+display: flex;
+justify-content: center;
+background-image: url("https://fondosmil.com/fondo/22152.jpg");
+background-repeat: no-repeat;
+}
+
+.iniciar{
+    position: absolute;
+    bottom: 50px;
+    height: 70px;
+    width: auto;
+    font-size: 1.5em;
+    background-color: rgb(95, 228, 95);
+    border: none;
+    border-radius: 0.5em;
+    padding: 10px;
+    cursor: pointer;
+
+    transition: 0.4s;
+}
+.iniciar:hover{
+    transform: scale(1.08);
+    box-shadow: 1px 1px 25px 5px rgb(95, 228, 95);
+}
+.reiniciar{
+    position: absolute;
+    bottom: 50px;
+    height: 70px;
+    width: auto;
+    font-size: 1.5em;
+    background-color: rgb(255, 2, 242);
+    border: none;
+    border-radius: 0.5em;
+    padding: 10px;
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: 0.4s;
+    box-shadow: 1px 1px 25px 5px orange;
+}
+#tablero{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90vh;
+    height: 90vh;
+}
+
+#tablero > input[type="button"]{
+    display: inline-block;
+    
+    box-shadow: 1px 1px 25px 1px rgb(39, 209, 33);
+    border-radius: 1rem;
+
+    margin: 1%;
+
+    width: 25%;
+    height: 25%;
+
+    font-size: 20vh;
+    font-family: monospace;
+    font-weight: 5em;
+}
+#tablero > input[type="button"]:hover{
+    cursor: pointer;
+}
+.boton{
+    background-color: rgb(44, 35, 168);
+    color: rgb(44, 35, 168);
+}
+.botonX{
+    background-color: rgb(255, 25, 0);
+}
+.botonO{
+    background-color: rgb(255, 230, 2);
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <title>Juego de gato</title>
+  </head>
+  <body>
+
+    <!-- We will put our React component inside this div. -->
+    <div id="tablero">
+      <input type="button" onclick="ficha(this)" id="btn0"/>
+      <input type="button" onclick="ficha(this)" id="btn1"/>
+      <input type="button" onclick="ficha(this)" id="btn2"/>
+      <br>
+      <input type="button" onclick="ficha(this)" id="btn3"/>
+      <input type="button" onclick="ficha(this)" id="btn4"/>
+      <input type="button" onclick="ficha(this)" id="btn5"/>
+      <br>
+      <input type="button" onclick="ficha(this)" id="btn6"/>
+      <input type="button" onclick="ficha(this)" id="btn7"/>
+      <input type="button" onclick="ficha(this)" id="btn8"/>
+    </div>
+    <input type="button" id="btnstart" class="iniciar" value="Iniciar" onclick="start()">
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="script.js"></script>
+
+  </body>
+</html>
